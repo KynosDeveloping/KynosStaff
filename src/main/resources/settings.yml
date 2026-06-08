@@ -1,0 +1,96 @@
+Settings:
+  MainGui:
+    staffheadslot: 0
+    playerlistslot: 9
+    globalmute-slot: 18
+    quickrtp-slot: 27
+    filler-glass-material: "GRAY_STAINED_GLASS_PANE"
+    filler-glass-custommodeldata: 0
+    close-button-material: "BARRIER"
+    close-button-slot: 45
+    close-button-custommodeldata: 0
+    pagination-arrows-custommodeldata: 0
+
+    globalmute:
+      material-unmuted: "LIME_DYE"
+      material-muted: "RED_DYE"
+    quickrtp:
+      material: "COMPASS"
+
+    automanagement:
+      fill-empty-slots: "true"
+      fly:
+        material: "FEATHER"
+        slot: 12
+        custommodeldata: 0
+      godmode:
+        material: "GOLDEN_APPLE"
+        slot: 14
+        custommodeldata: 0
+      vanish:
+        material: "ENDER_EYE"
+        slot: 16
+        custommodeldata: 0
+      trollstick:
+        material: "STICK"
+        slot: 30
+        custommodeldata: 0
+      nightvision:
+        material: "GOLDEN_CARROT"
+        slot: 32
+      randomtp:
+        material: "COMPASS"
+        slot: 34
+
+    playermanagement:
+      fill-empty-slots: "true"
+      teleport:
+        material: "ENDER_PEARL"
+        slot: 12
+        custommodeldata: 0
+      freeze:
+        material: "PACKED_ICE"
+        slot: 14
+        custommodeldata: 0
+        command: "freeze %target%"
+      invsee:
+        material: "CHEST"
+        slot: 16
+        custommodeldata: 0
+      kick:
+        material: "OAK_DOOR"
+        slot: 23
+        custommodeldata: 0
+        command: "kick %target% Kicked via StaffPanel"
+      enderchest:
+        material: "ENDER_CHEST"
+        slot: 32
+      kill:
+        material: "NETHERITE_SWORD"
+        slot: 34
+      mute:
+        material: "PAPER"
+        slot: 30
+        custommodeldata: 0
+        command-template: "tempmute %target% %time% Muted via StaffPanel"
+        durations:
+          option1:
+            time: "15m"
+            slot: 20
+            material: "LIME_DYE"
+          option2:
+            time: "1h"
+            slot: 21
+            material: "GREEN_DYE"
+          option3:
+            time: "12h"
+            slot: 22
+            material: "YELLOW_DYE"
+          option4:
+            time: "1d"
+            slot: 23
+            material: "ORANGE_DYE"
+          option5:
+            time: "30d"
+            slot: 24
+            material: "RED_DYE"

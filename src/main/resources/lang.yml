@@ -1,0 +1,233 @@
+GUI:
+  Global:
+    close-button:
+      name: "&#ff8585║ CLOSE PANEL ║"
+      lore:
+        - "&8« Click to Close »"
+        - ""
+        - " &7Close the staff menu."
+  Maingui:
+    title: "&#ff8585Staff Panel &8• &#a0a0a0Page {page}"
+    staff-head:
+      name: "%luckperms_prefix% &#ffb03a%player_name%"
+      lore:
+        - "&8« Personal Account »"
+        - ""
+        - " &7Click to open your"
+        - " &7self management menu."
+    playerlist:
+      name: "&#f3b23e❖ Player List"
+      lore:
+        - "&8« Global Directory »"
+        - ""
+        - " &7View and moderate all"
+        - " &7online players."
+    other-staff:
+      name: "&#0080ff⚡ %staffer%"
+      lore:
+        - "&8« Quick Action »"
+        - ""
+        - " &#3ac1ff➔ Left Click &8• &7Teleport to them"
+        - " &#a3e043➔ Right Click &8• &7Teleport them to you"
+    globalmute:
+      name-unmuted: "&#5ca904✔ Chat Status: UNMUTED"
+      name-muted: "&#a90404✖ Chat Status: MUTED"
+      lore:
+        - "&8« Global Chat »"
+        - ""
+        - " &7Click to lock or unlock"
+        - " &7the global chat."
+    quickrtp:
+      name: "&#0cb16e✦ Quick Patrol RTP"
+      lore:
+        - "&8« Random Teleport »"
+        - ""
+        - " &7Teleport instantly to a"
+        - " &7random active player."
+  PlayerList:
+    title: "&#f3b23eManage Players &8• &#a0a0a0Page {page}"
+    player-head:
+      name: "&#0ca2a2👤 {player}"
+      lore:
+        - "&8« Player Actions »"
+        - ""
+        - " &#ff4b4b➔ Right Click &8• &7Open moderation menu"
+  AutomanagementGui:
+    title: "&#f3b23eManaging: &#59e2e2Yourself"
+    items:
+      fly:
+        name: "&#0ca2a2✈ Toggle Fly"
+        lore:
+          - "&8« Ability »"
+          - ""
+          - " &7Enable or disable your"
+          - " &7ability to fly."
+      godmode:
+        name: "&#ffb03a🛡 Toggle Godmode"
+        lore:
+          - "&8« Ability »"
+          - ""
+          - " &7Become completely invulnerable"
+          - " &7to any type of damage."
+      vanish:
+        name: "&#b23ef3👁 Toggle Vanish"
+        lore:
+          - "&8« Ability »"
+          - ""
+          - " &7Hide yourself from players"
+          - " &7and from the tablist."
+      trollstick:
+        name: "&#f3b23e☄ Get Troll Stick"
+        lore:
+          - "&8« Staff Tool »"
+          - ""
+          - " &7Get a custom stick with"
+          - " &7extreme knockback."
+      nightvision:
+        name: "&#643ef3🔮 Toggle Night Vision"
+        lore:
+          - "&8« Ability »"
+          - ""
+          - " &7Give or remove infinite"
+          - " &7night vision effect."
+      randomtp:
+        name: "&#0cb16e🎲 Random Teleport"
+        lore:
+          - "&8« Navigation »"
+          - ""
+          - " &7Teleport to a random"
+          - " &7player on the server."
+  PlayerManagementGui:
+    title: "&#ff8585Managing: &#ffd269{target}"
+    items:
+      teleport:
+        name: "&#0cb16e➘ Teleport"
+        lore:
+          - " &7Teleport directly to player."
+      freeze:
+        name: "&#0ca2a2❄ Freeze Player"
+        lore:
+          - " &7Freeze or unfreeze the player."
+      invsee:
+        name: "&#f3b23e🔍 Inspect Inventory"
+        lore:
+          - " &7Open and check player's inventory."
+      kick:
+        name: "&#e66000🚪 Kick Player"
+        lore:
+          - " &7Disconnect player from the server."
+      mute:
+        name: "&#a90404🔇 Mute Player"
+        lore:
+          - " &7Select a duration to mute player."
+      enderchest:
+        name: "&#960ce7🔮 Open Enderchest"
+        lore:
+          - " &7Open and check player's enderchest."
+      kill:
+        name: "&#990000☠ Kill Player"
+        lore:
+          - " &7Instantly kill the player."
+  TimeSelectionGui:
+    title: "&#a0a0a0Select Duration for &c{target}"
+    back-button:
+      name: "&#f3b23e◀ Back to Management"
+      lore:
+        - " &7Return to the previous menu."
+    item-format:
+      name: "&#f3b23eDuration: &#59e2e2{time}"
+      lore:
+        - ""
+        - " &7Click to apply this duration"
+        - " &7to the player's sanction."
+  Pagination:
+    previous-page-name: "&#0cb16e◀ Previous Page"
+    next-page-name: "&#0cb16eNext Page ▶"
+
+GuiSounds:
+  DefaultClick:
+    sound: "UI_BUTTON_CLICK"
+    volume: 1.0
+    pitch: 1.0
+  CloseMenu:
+    sound: "BLOCK_NOTE_BLOCK_CHIME"
+    volume: 1.0
+    pitch: 0.5
+  ChangePage:
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 1.0
+    pitch: 1.2
+  ToggleMuteOn:
+    sound: "ENTITY_VILLAGER_NO"
+    volume: 1.0
+    pitch: 0.8
+  ToggleMuteOff:
+    sound: "ENTITY_VILLAGER_YES"
+    volume: 1.0
+    pitch: 1.2
+  TeleportAction:
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.0
+    pitch: 1.5
+  ErrorAction:
+    sound: "ENTITY_ZOMBIE_AMBIENT"
+    volume: 0.8
+    pitch: 0.5
+
+Messages:
+  no-permission: "&#ff8585You don't have permission to do this!"
+  PlayerOnly: "&#ff8585This command can only be executed by a player."
+  alreadyonthegui: "&#ffdf7aYou are already on this page!"
+  staffer-offline: "&#ff8585This staff member is no longer online."
+  player-offline: "&#ff8585This player is no longer online."
+  teleported-to-staffer: "&#a3e043You teleported to &#3ac1ff%target%&#a3e043."
+  teleported-staffer-to-you: "&#a3e043You teleported &#3ac1ff%target% &#a3e043to you."
+  teleported-by-staffer: "&#ffdf7aYou have been teleported by &#3ac1ff%staffer%&#ffdf7a."
+  cannot-interact-with-staff: "&#ff8585You cannot moderate another staff member!"
+  godmodeon: "&#a3e043Godmode has been &#3ce7a0ENABLED&#a3e043."
+  godmodeoff: "&#ff8585Godmode has been &#ff4b4bDISABLED&#ff8585."
+  invalid-number: "&#ff8585Please enter a valid number!"
+  invalid-level-range: "&#ff8585The level must be greater than zero."
+  trollstick-received: "&#a3e043You received a Troll Stick with level &#ffdf7a%level%&#a3e043."
+  flyon: "&#a3e043Fly mode &#3ce7a0ONLINE&#a3e043."
+  flyoff: "&#ff8585Fly mode &#ff4b4bOFFLINE&#ff8585."
+  vanishon: "&#a3e043Now you are hidden from players (except staff)."
+  vanishoff: "&#ff8585Now you are visible to other players."
+  provideplayer: "&#ff8585Please specify a valid player name."
+  target-frozen: "&#ff8585🛑 YOU ARE FROZEN! &7Do not logout or you will be banned."
+  staff-frozen-success: "&#a3e043You successfully froze &#59e2e2%target%&#a3e043."
+  target-unfrozen: "&#a3e043You have been unfrozen by a staff member."
+  staff-unfrozen-success: "&#a3e043You successfully unfroze &#59e2e2%target%&#a3e043."
+  nightvision-on: "&#a3e043Night Vision activated."
+  nightvision-off: "&#ff8585Night Vision deactivated."
+  no-players-online: "&#ff8585There are no other online players to teleport to."
+  teleported-to-random: "&#a3e043Teleported to a random player: &#59e2e2%target%&#a3e043."
+  player-killed: "&#a3e043You successfully killed &#ffdf7a%target%&#a3e043."
+  globalchat-muted: "&#ff8585✉ Chat &8• &7Global chat has been &#ff4b4bMUTED &7by &#3ac1ff%staffer%&7."
+  globalchat-unmuted: "&#3ce7a0✉ Chat &8• &7Global chat has been &#3ce7a0UNMUTED &7by &#3ac1ff%staffer%&7. You can speak now!"
+  chat-is-currently-muted: "&#ff8585The global chat is currently muted. Only staff can talk."
+
+  # KYNOSSTAFF COMMAND MESSAGES
+  Reload:
+    lang-title: "&#0cb16eLang.yml"
+    lang-subtitle: "&7Successfully reloaded"
+    settings-title: "&#0cb16eSettings.yml"
+    settings-subtitle: "&7Successfully reloaded"
+    config-title: "&#0cb16eConfig.yml"
+    config-subtitle: "&7Successfully reloaded"
+
+  # Gestione dell'help tramite lista nativa di stringhe
+  HelpMenu:
+    - ""
+    - "&#ff8585&lKynosStaff &8• &7Core Commands"
+    - ""
+    - " &#ffdf7a/staffpanel &8- &7Open the main Staff Dashboard."
+    - " &#ffdf7a/fly &8- &7Toggle flight mode."
+    - " &#ffdf7a/freeze <player> &8- &7Freeze or thaw a suspected player."
+    - " &#ffdf7a/godmode &8- &7Toggle absolute invulnerability."
+    - " &#ffdf7a/trollstick [level] &8- &7Spawn a custom knockback stick."
+    - " &#ffdf7a/vanish &8- &7Toggle visibility packet masking."
+    - " &#ffdf7a/kynosstaff help &8- &7Show this help page."
+    - " &#ffdf7a/kynosstaff reloadlang &8- &7Reload translation configurations."
+    - " &#ffdf7a/kynosstaff reloadsettings &8- &7Reload technical configuration blocks."
+    - ""

@@ -1,0 +1,12 @@
+# ==========================================
+#         KynosStaff Configuration
+# ==========================================
+
+Settings:
+  # Check for new plugin releases on the GitHub repository at startup
+  update-checker: true
+
+Freeze:
+  # If true, players who are frozen cannot execute any commands.
+  # If false, they will be able to use commands normally while frozen.
+  block-commands: true

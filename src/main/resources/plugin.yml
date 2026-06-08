@@ -1,0 +1,96 @@
+name: KynosStaff
+version: '${version}'
+main: it.kynos.KynosStaff.KynosStaff
+api-version: '1.21'
+load: POSTWORLD
+authors: [ Kynos ]
+website: github.com/KynosDeveloping
+
+commands:
+  kynosstaff:
+    usage: /kynosstaff [help|reloadlang|reloadsettings]
+    description: "Main administration command for KynosStaff core."
+    aliases: [kstaff]
+  staffpanel:
+    usage: /staffpanel
+    description: "Main command to open the Staff Panel GUI."
+    permission: kynosstaff.panel.use
+    aliases: [staff]
+  godmode:
+    usage: /godmode
+    description: "Allows staffer to activate godmode"
+    permission: kynosstaff.godmode
+  trollstick:
+    usage: /trollstick
+    description: "Allows staffer to get the trollstick"
+    permission: kynosstaff.trollstick
+  fly:
+    usage: /fly
+    description: "Allows staffer to get fly"
+    permission: kynosstaff.fly
+  vanish:
+    usage: /vanish
+    description: "Allows staffer enter in vanish"
+    permission: kynosstaff.vanish
+  freeze:
+    usage: /freeze
+    description: "Allows staffer to freeze a player"
+    permission: kynosstaff.freeze
+  mutechat:
+    usage: /mutechat
+    description: "Allows staffer to toggle the global server chat"
+    permission: kynosstaff.mutechat
+
+permissions:
+  kynosstaff.panel.use:
+    description: "Allows the player to open the main staff panel and see other online staff members."
+    default: op
+  kynosstaff.staff.help:
+    description: "Allows viewing the core plugin help menu."
+    default: op
+  kynosstaff.staff.reloadlang:
+    description: "Allows reloading the lang.yml file."
+    default: op
+  kynosstaff.staff.reloadsettings:
+    description: "Allows reloading the settings.yml file."
+    default: op
+  kynosstaff.staff.reloadconfig:
+    description: "Allows reloading the config.yml file."
+    default: op
+  kynosstaff.godmode:
+    description: "Allows staffer to use command /godmode"
+    default: op
+  kynosstaff.trollstick:
+    description: "Allows staffer to get troll stick"
+    default: op
+  kynosstaff.fly:
+    description: "Allows staffer to get fly"
+    default: op
+  kynosstaff.vanish:
+    description: "Allows staffer to use command /vanish"
+    default: op
+  kynosstaff.freeze:
+    description: "Allows staffer to freeze a player"
+    default: op
+  kynosstaff.mutechat:
+    description: "Allows staffer to lock or unlock the global chat"
+    default: op
+  kynosstaff.chat.bypass:
+    description: "Allows writing in chat even when the global chat is muted"
+    default: op
+  kynosstaff.*:
+    description: "Wildcard permission that grants all KynosStaff permissions."
+    default: op
+    children:
+      kynosstaff.panel.use: true
+      kynosstaff.staff.help: true
+      kynosstaff.staff.reloadlang: true
+      kynosstaff.staff.reloadsettings: true
+      kynosstaff.staff.reloadconfig: true
+      kynosstaff.godmode: true
+      kynosstaff.trollstick: true
+      kynosstaff.fly: true
+      kynosstaff.vanish: true
+      kynosstaff.freeze: true
+      kynosstaff.mutechat: true
+      kynosstaff.chat.bypass: true
