@@ -33,5 +33,4 @@ The compiled JAR will be in `target/`.
 <img width="350" height="437" alt="Screenshot 2026-06-08 103633" src="https://github.com/user-attachments/assets/6ea3b912-81e5-4ac6-8467-dbaeba167127" />
 <img width="355" height="438" alt="Screenshot 2026-06-08 103646" src="https://github.com/user-attachments/assets/68699f8a-192c-4bdc-b732-68dd98c57b61" />
 <img width="352" height="442" alt="Screenshot 2026-06-08 103653" src="https://github.com/user-attachments/assets/f4b2976c-d16c-4309-a3dc-2e9a4d6e9814" />
-<img width="352" height="442" alt="Screenshot 2026-06-08 103653" src="https://github.com/user-attachments/assets/842d2bf2-8001-4228-bc8f-9ac543d1ee9f" />
 <img width="349" height="438" alt="Screenshot 2026-06-08 103706" src="https://github.com/user-attachments/assets/b8549bb5-8146-4adb-8f2d-ada58668f7d2" />
